@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <script src="https://kit.fontawesome.com/5f780ea240.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('Bv_Ds2lmPc4q6UwS0')
+    </script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <center>
+                <img src="../img/logoblanco.png">
+            </center>
+            <nav>
+                <ul id="menu">
+                    <li><a class="boton-menu" href="./agregar.html"> <i class="bi bi-file-plus"></i>Agregar</a></li>
+                    <li><a href="./index.html"><button id="todos" class="boton-menu boton-categoria"> <i
+                                    class="fa-solid fa-bag-shopping"></i>Productos</button></a></li>
+                    <li><a class="boton-menu " href="./carrito.html"> <i class="fa-solid fa-cart-shopping"></i> Carrito
+                            <span class="numerito" id="numerito">0</span></a></li>
+                </ul>
+        </header>
+        <main>
+            <h2 class="titulo-principal">Pago</h2>
+            <div id="carrito" class="contenedor-carrito">
+                <form id="form">
+                    <div class="field carrito-acciones-izquierda">
+                        <h3><label for="from_name">Nombre</label></h3><br>
+                        <input type="text" name="from_name" class="form-control llenado" id="from_name"><br>
+                    </div>
+                    <div class="field">
+                        <h3><label for="cc_to">Correo</label></h3><br>
+                        <input type="email" name="cc_to" class="form-control llenado" id="cc_to">
+                    </div>
+                    <button type="submit" id="button" class="carrito-acciones-comprar" value="Send Email">Envíar
+                        mensaje</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p class="texto-footer">Hecho por Wonder Dou</p>
+    </footer>
+    <script src="../js/pago.js"></script>
+</body>
+
+</html>
